@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_textView_label_tipo_de_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_tipo_de_producto"/>
+
+        <TextView
+            android:id="@+id/id_textView_label_marca_del_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_marca_del_producto"
+            android:layout_marginStart="@+id/id_textView_label_tipo_de_producto"/>
+
+        <TextView
+            android:id="@+id/id_textView_label_nombre_del_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nombre_del_producto"/>
+
+        <TextView
+            android:id="@+id/id_textView_label_cantidad_vendida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_cantidad_vendida"/>
+
+        <TextView
+            android:id="@+id/id_textView_label_monto_vendido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_monto_vendido"/>
+
+        <ImageView
+            android:id="@+id/id_imageView_comida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/text_descripcion_imagen_comida"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#919191"
+        android:layout_marginTop="11dp"
+        />
+</LinearLayout>

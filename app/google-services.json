@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "635119562543",
+    "firebase_url": "https://proyecto-kmt-1id.firebaseio.com",
+    "project_id": "proyecto-kmt-1id",
+    "storage_bucket": "proyecto-kmt-1id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635119562543:android:c2efb8e55d651c731bbbda",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_mkt_v05"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635119562543-39a3dflrkgvslst8ng0f1ta5doro172v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUhIviePK1hIvysxK0-OJ7yS52T2tDOpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635119562543-39a3dflrkgvslst8ng0f1ta5doro172v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

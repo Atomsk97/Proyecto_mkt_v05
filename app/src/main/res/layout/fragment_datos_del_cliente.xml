@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DatosDelClienteFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_text_nombre_del_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nombres"
+            />
+        <TextView
+            android:id="@+id/id_text_corregir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/id_text_nombre_del_cliente"
+            android:layout_alignEnd="@+id/id_text_nombre_del_cliente"
+            android:text="@string/text_corregir"/>
+
+        <EditText
+            android:id="@+id/id_editText_nombre_del_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_text_nombre_del_cliente"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@+id/id_text_corregir"
+            android:inputType="textCapWords" />
+        <CheckBox
+            android:id="@+id/id_checkBox_corregir_nombre_del_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/id_editText_nombre_del_cliente"
+            android:layout_alignEnd="@+id/id_text_corregir"
+            />
+
+        <TextView
+            android:id="@+id/id_text_nombre_del_mercado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nombre_del_mercado"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/id_editText_nombre_del_cliente"/>
+        <EditText
+            android:id="@+id/id_editText_nombre_del_mercado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@+id/id_text_corregir"
+            android:layout_below="@+id/id_text_nombre_del_mercado"/>
+        <CheckBox
+            android:id="@+id/id_checkBox_corregir_nombre_del_mercado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/id_editText_nombre_del_mercado"
+            android:layout_alignEnd="@+id/id_text_corregir"/>
+
+        <TextView
+            android:id="@+id/id_text_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_direccion_del_cliente"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/id_editText_nombre_del_mercado"/>
+        <EditText
+            android:id="@+id/id_editText_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@+id/id_text_corregir"
+            android:layout_below="@+id/id_text_direccion"/>
+        <CheckBox
+            android:id="@+id/id_checkBox_corregir_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/id_editText_direccion"
+            android:layout_alignEnd="@+id/id_text_corregir"/>
+
+        <Button
+            android:id="@+id/id_boton_enviar_correcciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_enviar_correcciones"
+            android:clickable="false"
+            android:layout_below="@+id/id_editText_direccion"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toStartOf="@+id/id_boton_ingresar_ventas"/>
+
+        <Button
+            android:id="@+id/id_boton_ingresar_ventas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ingresar_ventas"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/id_editText_direccion"/>
+
+    </RelativeLayout>
+
+</ScrollView>

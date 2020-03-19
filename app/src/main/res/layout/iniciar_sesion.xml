@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg_and_log.PantallaPrincipalActivity"
+    android:id="@+id/loginInterface"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/id_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/id_contrasenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_contrasenha"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/id_correo"
+        />
+    <ImageButton
+        android:id="@+id/id_boton_ver_contrasenha"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:src="@drawable/ic_visibility_off_24px"
+        android:layout_alignTop="@+id/id_contrasenha"
+        android:layout_alignBottom="@+id/id_contrasenha"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/text_ver_contrasenha"
+        />
+
+    <CheckBox
+        android:id="@+id/id_mantener_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_mantener_sesion_abierta"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/id_contrasenha"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_below="@+id/id_mantener_sesion">
+
+        <Button
+            android:id="@+id/id_boton_iniciar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_iniciar_sesion"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:stateListAnimator="@null"
+            />
+
+        <Button
+            android:id="@+id/id_boton_registrar_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_registrar_usuario"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:stateListAnimator="@null"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contenedor_registro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

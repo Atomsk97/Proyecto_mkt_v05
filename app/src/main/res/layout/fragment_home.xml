@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- TODO:Default Home TextView -->
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/id_tiempo_de_asistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/text_home"/>
+
+    <Button
+        android:id="@+id/id_boton_marcar_asistencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/id_tiempo_de_asistencia"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:background="#A0A0FF"
+        android:text="@string/text_marcar_asistencia" />
+
+    <EditText
+        android:id="@+id/id_buscador_por_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="@string/text_codigo_del_cliente"
+        android:layout_toStartOf="@+id/id_boton_buscar_cliente"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/id_boton_marcar_asistencia"/>
+
+    <Button
+        android:id="@+id/id_boton_buscar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A0FFA0"
+        android:text="@string/text_buscar"
+        android:layout_alignEnd="@+id/id_boton_marcar_asistencia"
+        android:layout_alignBaseline="@+id/id_buscador_por_codigo"
+        />
+
+    <ProgressBar
+        android:id="@+id/id_progress_bar_del_buscador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        android:layout_toEndOf="@+id/id_boton_buscar_cliente"
+        android:layout_alignTop="@id/id_boton_buscar_cliente"/>
+
+    <FrameLayout
+        android:id="@+id/contenedor_datos_del_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/id_boton_buscar_cliente"/>
+
+</RelativeLayout>

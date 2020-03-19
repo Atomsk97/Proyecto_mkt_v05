@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_textView_label_codigo_del_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_codigo_del_cliente"/>
+
+        <TextView
+            android:id="@+id/id_textView_codigo_del_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/id_textView_label_codigo_del_cliente"/>
+
+        <TextView
+            android:id="@+id/id_textView_label_nombre_del_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nombre_del_cliente"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/id_textView_label_codigo_del_cliente"/>
+
+        <TextView
+            android:id="@+id/id_textView_nombre_del_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/id_textView_label_nombre_del_cliente"
+            android:layout_below="@+id/id_textView_codigo_del_cliente"/>
+
+        <Button
+            android:id="@+id/id_boton_agregar_una_venta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_agregar_ventas"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/id_textView_nombre_del_cliente"/>
+
+        <FrameLayout
+            android:id="@+id/contenedor_ventas_del_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/id_boton_agregar_una_venta"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/id_boton_finalizar_ventas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="@string/text_terminar_ventas" />
+
+</FrameLayout>
